@@ -1,26 +1,24 @@
+//Change language
 function toggleLanguage(language) {
-// Get all elements with the class 'en' and 'es'
 var elementsEn = document.getElementsByClassName('en');
 var elementsEs = document.getElementsByClassName('es');
 var elementsSkEn = document.getElementsByClassName('sk-en');
 var elementsSkEs = document.getElementsByClassName('sk-es');
 
 if (language === 'english') {
-    // Set the display style for elements with class 'en' to 'block'
     for (var i = 0; i < elementsEn.length; i++) {
     elementsEn[i].style.display = 'block';
     }
-    // Set the display style for elements with class 'es' to 'none'
+
     for (var i = 0; i < elementsEs.length; i++) {
     elementsEs[i].style.display = 'none';
     }
 } 
 else if (language === 'spanish') {
-    // Set the display style for elements with class 'en' to 'none'
     for (var i = 0; i < elementsEn.length; i++) {
     elementsEn[i].style.display = 'none';
     }
-    // Set the display style for elements with class 'es' to 'block'
+    
     for (var i = 0; i < elementsEs.length; i++) {
     elementsEs[i].style.display = 'block';
     }
@@ -87,6 +85,7 @@ if (window.matchMedia("(min-width: 768px)").matches) {
     $(multipleCardCarousel).addClass("slide");
 }
 
+//Animacion de las barras
 $(document).ready(function () {
     function fillProgressBar(barId, targetValue) {
         var progressBar = document.getElementById(barId);
@@ -101,10 +100,10 @@ $(document).ready(function () {
             progressBar.value = targetValue;
             clearInterval(interval);
         }
-      }, 20); // Velocidad de la animación en milisegundos
+      }, 20); // Velocidad de la animacion
     }
 
-    // Esta función verifica si el elemento está en el viewport
+    // Ve si el usuario esta viendo
     function isElementInViewport(el) {
         var rect = el.getBoundingClientRect();
         return (
@@ -115,6 +114,7 @@ $(document).ready(function () {
         );
     }
 
+    //Valores de las barras
     function handleScroll() {
         var htmlProgressBar = document.getElementById("html-progress");
         var jsProgressBar = document.getElementById("js-progress");
@@ -148,14 +148,12 @@ $(document).ready(function () {
     }
     }
 
-    // Agregar un listener para el evento scroll
     window.addEventListener("scroll", handleScroll);
 
-    // Llama a handleScroll al cargar la página para verificar si las barras de progreso están en el viewport
     handleScroll();
 });
 
-//Animacion de texto
+//Animacion de titulo
 var typed = new Typed('#title2', {
     strings: ["Full Stack Python developer Jr."],
     typeSpeed: 50,
@@ -163,12 +161,11 @@ var typed = new Typed('#title2', {
     loop: true,
 });
 
+// Animacion del texto acerca de mi español
 // Espera a que el documento esté completamente cargado
 document.addEventListener("DOMContentLoaded", function() {
-    // Selecciona el elemento con la clase "animated-text"
     var animatedTextElement = document.querySelector(".animated-text");
 
-    // Función para verificar si el elemento está en el área visible
     function isElementInViewport(element) {
         var rect = element.getBoundingClientRect();
         return (
@@ -179,7 +176,7 @@ document.addEventListener("DOMContentLoaded", function() {
         );
     }
 
-    // Función para activar la animación cuando el elemento está en el área visible
+    // Valores de los efectos de animacion
     function activateAnimation() {
         var typed;
         if (isElementInViewport(animatedTextElement)) {
@@ -198,24 +195,19 @@ document.addEventListener("DOMContentLoaded", function() {
                     self.stop();
                 }
             });
-            // Una vez que se active la animación, quita el evento de desplazamiento para no volver a activarla.
             window.removeEventListener("scroll", activateAnimation);
         }
     }
 
-    // Agrega un evento de desplazamiento para verificar cuando el elemento esté en el área visible
     window.addEventListener("scroll", activateAnimation);
 
-    // Activa la animación si el elemento ya está en el área visible cuando se carga la página
     activateAnimation();
 });
 
-// Espera a que el documento esté completamente cargado
+// Animacion del texto acerca de mi ingles
 document.addEventListener("DOMContentLoaded", function() {
-    // Selecciona el elemento con la clase "animated-text"
     var animatedTextElement = document.querySelector(".animated-text2");
 
-    // Función para verificar si el elemento está en el área visible
     function isElementInViewport(element) {
         var rect = element.getBoundingClientRect();
         return (
@@ -226,7 +218,6 @@ document.addEventListener("DOMContentLoaded", function() {
         );
     }
 
-    // Función para activar la animación cuando el elemento está en el área visible
     function activateAnimation() {
         var typed;
         if (isElementInViewport(animatedTextElement)) {
@@ -245,14 +236,12 @@ document.addEventListener("DOMContentLoaded", function() {
                     self.stop();
                 }
             });
-            // Una vez que se active la animación, quita el evento de desplazamiento para no volver a activarla.
+
             window.removeEventListener("scroll", activateAnimation);
         }
     }
 
-    // Agrega un evento de desplazamiento para verificar cuando el elemento esté en el área visible
     window.addEventListener("scroll", activateAnimation);
 
-    // Activa la animación si el elemento ya está en el área visible cuando se carga la página
     activateAnimation();
 });
