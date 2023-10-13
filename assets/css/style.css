@@ -1,0 +1,214 @@
+@import url('https://fonts.googleapis.com/css?family=Press+Start+2P');
+*{
+    font-family: 'Press Start 2P';
+}
+
+body{
+    font-family: 'Press Start 2P', sans-serif;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+.navbar{
+    background: linear-gradient(#f89d5283, rgba(33, 16, 16, 0.52));
+}
+
+#inicio {
+    background-image: url(../img/WP4.gif);
+    background-size: cover;
+    background-position: center center;
+    height: 100vh;
+}
+
+.titulo{
+    padding-top: 20%;
+}
+
+#title2, .titulo{
+    text-align: center;
+    text-decoration: underline;
+    color: rgb(255, 255, 255);
+}
+
+#acerca {
+    margin-top: 2%;
+    margin-bottom: 2%;
+}
+
+.photo {
+    max-width: 50%;
+    height: auto;
+    margin-left: 30%;
+    box-shadow: 2px 6px 8px 0 rgba(22, 22, 26, 0.18);
+}
+
+.sobremi {
+    font-size: 14px;
+}
+
+#acerca-text-en {
+    text-align: justify;
+    text-justify: inter-word;
+}
+
+#acerca-text-es {
+    text-align: justify;
+    text-justify: inter-word;
+}
+
+.resume{
+    background-color: rgb(243, 240, 240);
+    padding: 0.1%;
+}
+
+#retro-container{
+    margin: 2%;
+    
+}
+
+.resume .resume-title {
+    font-size: 26px;
+    font-weight: 400;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    color: #222222;
+}
+
+.resume .resume-item {
+    padding: 0 0 20px 20px;
+    margin-top: -2px;
+    border-left: 2px solid #34b7a7;
+    position: relative;
+}
+
+.resume .resume-item h4 {
+    line-height: 18px;
+    font-size: 18px;
+    font-weight: 600;
+    color: #1d685f;
+    margin-bottom: 10px;
+}
+
+.resume .resume-item h5 {
+    font-size: 16px;
+    background: #effbf9;
+    padding: 5px 15px;
+    display: inline-block;
+    font-weight: 600;
+    margin-bottom: 10px;
+    color: #34b7a7;
+}
+
+.resume .resume-item ul {
+    padding-left: 20px;
+}
+
+.resume .resume-item ul li {
+    padding-bottom: 10px;
+}
+
+.resume .resume-item:last-child {
+    padding-bottom: 0;
+}
+
+.resume .resume-item::before {
+    content: "";
+    position: absolute;
+    width: 16px;
+    height: 16px;
+    border-radius: 50px;
+    left: -9px;
+    top: 0;
+    background: #fff;
+    border: 2px solid #34b7a7;
+}
+
+.title{
+    text-align: center;
+    text-decoration: underline;
+    color: rgb(231, 96, 42);
+}
+
+#skills{
+    background: linear-gradient(#ce5aeb83, rgba(33, 16, 16, 0.52)), url("../img/WP2.png");
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    padding-top: 25px;
+    padding-bottom: 120px;
+}
+
+progress{
+    margin-bottom: 10%;
+}
+
+.carousel-inner {
+    padding: 1em;
+}
+.card {
+    margin: 0 0.5em;
+    box-shadow: 2px 6px 8px 0 rgba(22, 22, 26, 0.18);
+    border: none;
+}
+.carousel-control-prev,
+.carousel-control-next {
+    background-color: #e1e1e1;
+    width: 6vh;
+    height: 6vh;
+    border-radius: 50%;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.card .img-wrapper {
+    max-width: 100%;
+    height: 13em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.card img {
+    max-height: 100%;
+}
+
+footer {
+    background-color: #000;
+    color: #fff;
+    text-align: center;
+    padding: 30px 0;
+}
+
+footer a {
+    text-decoration: none;
+    color: #fff;
+    display: inline-block;
+    margin: 5px;
+    font-size: 26px;
+}
+
+@media (min-width: 768px) {
+    .carousel-item {
+    margin-right: 0;
+    flex: 0 0 33.333333%;
+    display: block;
+    }
+    .carousel-inner {
+    display: flex;
+    }
+}
+
+@media (max-width: 767px) {
+    .card .img-wrapper {
+    height: 12em;
+    }
+    #skills{
+        background-position: 98% 80%;
+    }
+    .is-small{
+        display: none !important; 
+    }
+}
+

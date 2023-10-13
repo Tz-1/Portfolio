@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">    <link rel="stylesheet" href="assets/css/style.css">
+  <link href="https://unpkg.com/nes.css@latest/css/nes.min.css" rel="stylesheet"/>
+  <link rel="shortcut icon" href="assets/img/icon.png" type="image/x-icon">
+  <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.11/lib/typed.min.js"></script>
+  <title>Portfolio Tz-1</title>
+</head>
+
+<body>
+<!--Navbar-->
+  <nav class="navbar navbar-expand-lg justify-content-md-center justify-content-start fixed-top">
+    <div class="container-fluid">
+        <a class="navbar-brand d-inline" href="#">Tz</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon nes-pointer"></span>
+        </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav mx-auto text-md-center text-left">
+          <li class="nav-item">
+            <a class="nav-link es" href="#inicio">Inicio</a>
+            <a class="nav-link en" href="#inicio" style="display: none;">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link es" href="#acerca">Acerca</a>
+            <a class="nav-link en" href="#acerca" style="display: none;">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#resume">Resume</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link es" href="#portafolio">Portafolio</a>
+            <a class="nav-link en" href="#portafolio" style="display: none;">Portfolio</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link es" href="#contacto">Contacto</a>
+            <a class="nav-link en" href="#contacto" style="display: none;">Contact</a>
+          </li>
+        </ul>
+        <ul class="nav navbar-nav flex-row justify-content-md-center justify-content-start flex-nowrap">
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle nes-pointer" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              <img src="assets/img/Lang.png" style="width: 20px;">
+            </a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="javascript:void(0);" onclick="toggleLanguage('spanish');">Español</a></li>
+              <li><hr class="dropdown-divider"></li>
+              <li><a class="dropdown-item" href="javascript:void(0);" onclick="toggleLanguage('english');">English</a></li>
+            </ul>
+          </li>
+          <li class="nav-item"><a class="nav-link" href="mailto:tomas.bravogg@gmail.com"><i class="nes-icon gmail is-small"></i></a></li>
+          <li class="nav-item"><a class="nav-link" href="https://www.linkedin.com/in/tom%C3%A1s-b-492b9b279/" target=”_blank”><i class="nes-icon linkedin is-small"></i></i></a></li>
+          <li class="nav-item"><a class="nav-link" href="https://github.com/Tz-1" target=”_blank”><i class="nes-icon github is-small"></i></a></li>
+      </ul>
+      </div>
+    </div>
+  </nav>
+
+<!--Titulo-->
+  <section id="inicio">
+    <h1 class="titulo">Tomás Bravo</h1>
+    <h3 id="title2"></h3>
+  </section>
+
+<!--Acerca-->
+  <section id="acerca" class="container">
+  <div class="nes-container with-title is-centered">
+    <p class="title es" style="display: block;">Acerca</p>
+    <p class="title en" style="display: none;">About</p>
+    <div class="row">
+      <div class="col-lg-6 d-flex align-items-center">
+        <img src="assets/img/PF1.png" class="rounded d-flex border border-5 border-success photo" alt="...">
+      </div>
+      <div class="col sobremi">
+        <h3 class="text-primary es">Hola, soy<strong> Tomás Bravo</strong></h3>
+        <h3 class="text-primary en" style="display: none;">Hi, I'm<strong> Tomás Bravo</strong></h3>
+        <h4 class="text-primary-emphasis">Full Stack Python developer Jr.</h4>
+        <br>
+        <p id="acerca-text-es" class="animated-text es"></p>
+        <p id="acerca-text-en" class="animated-text2 en" style="display: none;"></p>
+        <div class="text-md-center">
+          <a class="nes-btn is-success" id="cv-es" href="assets/files/CV Tomás Bravo ES.pdf" download="CV Tomás Bravo ES.pdf" target="_blank" style="display: inline-block;">Descargar CV</a>
+          <a class="nes-btn is-success" id="cv-en" href="assets/files/CV Tomás Bravo EN.pdf" download="CV Tomás Bravo EN.pdf" target="_blank" style="display: none;">Download CV</a>
+        </div>
+      </div>
+    </div>
+  </div>
+  </section>
+  
+<!--Resume-->
+  <section id="resume" class="resume">
+  <div class="nes-container with-title is-centered" id="retro-container">
+    <p class="title" style="background-color: rgb(243, 240, 240); display: block;" >Resume</p>
+      <div class="row">
+        <div class="col-lg-6">
+          <h3 class="resume-title es">Educacion</h3>
+          <h3 class="resume-title en" style="display: none;">Education</h3>
+          <div class="resume-item">
+            <h4>Bootcamp Edutecno</h4>
+            <h5>2023</h5>
+            <p><em>Talento Digital para Chile, Santiago, Chile</em></p>
+          </div>
+          <div class="resume-item">
+            <h4 class="es">Tecnico en Quimica y Farmacia</h4>
+            <h4 class="en" style="display: none;">Pharmacy Technician</h4>
+            <h5>2019 - 2021</h5>
+            <p><em>DUOC UC, Santiago, Chile</em></p>
+          </div>
+          <div class="resume-item">
+            <h3 class="resume-title es" >Aptitudes</h3>
+            <h3 class="resume-title en" style="display: none;">Skills</h3>
+            <li>Python (Django, PyQt)</li>
+            <li class="sk-es">Desarrollo web (HTML, CSS, Bootstrap, Javascript)</li>
+            <li class="sk-en" style="display: none;">Web Development (HTML, CSS, Bootstrap, Javascript)</li>
+            <li>Next.js</li>
+            <li>Scrum</li>
+            <li>GitHub</li>
+            <li>SQL (PostgreSQL, SQLite)</li>
+            <li class="sk-es">Trabajo en equipo</li>
+            <li class="sk-en" style="display: none;" >Teamwork</li>
+            <li class="sk-es">Administración logística</li>
+            <li class="sk-en" style="display: none;">Logistical administration</li>
+            <li class="sk-es">Responsabilidad</li>
+            <li class="sk-en" style="display: none;">Responsibility</li>
+            <li>Etc</li>
+          </div>
+        </div>
+
+        <div class="col-lg-6">
+          <h3 class="resume-title es">Experiencia Profesional</h3>
+          <h3 class="resume-title en" style="display: none;">Professional Experience</h3>
+          <div class="resume-item">
+            <h4 class="es">Técnico Farmacéutico</h4>
+            <h4 class="en" style="display: none;">Pharmacy Technician</h4>
+            <h5>2022</h5>
+            <p><em>Clínica Vespucio, Santiago, Chile </em></p>
+            <p>
+            <ul>
+              <li class="sk-es">Administrar la preparación y dispensación de medicamentos, incluido el inventario.</li>
+              <li class="sk-en">Managed the preparation and dispensing of medications, including inventory management.</li>
+              <li class="sk-es">Facilitar la entrega puntual de medicamentos a los distintos departamentos de la clínica.</li>
+              <li class="sk-en">Facilitated timely delivery of medications to different departments within the clinic.</li>
+              <li class="sk-es">Reconocido por sus superiores por ser diligente, puntual y una gran ética de trabajo.</li>
+              <li class="sk-en"> Recognized for diligence, punctuality, and strong work ethic by superiors.</li>
+            </ul>
+            </p>
+          </div>
+          <div class="resume-item">
+            <h4 class="es">Practicante</h4>
+            <h4 class="en" style="display: none;">Intern</h4>
+            <h5>2021</h5>
+            <p><em>Salcobrand, Santiago, Chile</em></p>
+            <p>
+            <ul>
+              <li class="sk-es">Ayudar a atender a los clientes y a reponer los medicamentos en las estanterías.</li>
+              <li class="sk-en">Assisted in serving clients and restocking medications on shelves.</li>
+              <li class="sk-es">Demostre una gran ética de trabajo y dedicación al equipo para su éxito.</li>
+              <li class="sk-en">Demonstrated a strong work ethic and dedication to the team's success</li>
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  </section>
+
+<!--Skills-->
+  <section id="skills">
+    <div class="container">
+      <p class="title">Skills</p>
+      <h5>HTML/CSS</h5>
+      <progress id="html-progress" class="nes-progress is-primary" value="0" max="100"></progress>
+      <br><br>
+      <h5>JavaScript</h5>
+      <progress id="js-progress" class="nes-progress is-primary" value="0" max="100"></progress>
+      <br><br>
+      <h5>SQL</h5>
+      <progress id="sql-progress" class="nes-progress is-primary" value="0" max="100"></progress>
+      <br><br>
+      <h5>Python</h5>
+      <progress id="py-progress" class="nes-progress is-primary" value="0" max="100"></progress>
+      <br><br>
+      <h5>Next.js</h5>
+      <progress id="n.js-progress" class="nes-progress is-primary" value="0" max="100"></progress>
+      <br><br>
+      <h5>Excel</h5>
+      <progress id="exc-progress" class="nes-progress is-primary" value="0" max="100"></progress>
+    </div>
+  </section>
+
+<!--Portafolio-->
+  <section id="portafolio">
+    <div class="nes-container with-title is-centered" id="retro-container">
+    <p class="title es" style="display: block;">Portafolio</p>
+    <p class="title en" style="display: none;">Portfolio</p>
+    <div id="carouselExampleControls" class="carousel">
+      <div class="carousel-inner">
+          <div class="carousel-item active">
+              <div class="card">
+                  <div class="img-wrapper"><img src="assets/img/prj/Vehiculos.png" class="d-block w-100" alt="..."> </div>
+                  <div class="card-body">
+                    <h5 class="card-title es">Django Vehiculos</h5>
+                    <h5 class="card-title en">Django Vehicles</h5>
+                    <p class="card-text">Website created with Django for buying vehicles. Users can register and edit their profiles.</p>
+                    <a href="https://github.com/Tz-1/Django_User" target=”_blank” class="nes-btn is-primary">GitHub</a>
+                  </div>
+              </div>
+          </div>
+          <div class="carousel-item">
+              <div class="card">
+                  <div class="img-wrapper"><img src="assets/img/prj/HHRR2.png" class="d-block w-100" alt="..."> </div>
+                  <div class="card-body">
+                    <h5 class="card-title">Django RRHH</h5>
+                    <p class="card-text es">Pagina web para buscar trabajadores, hecha en Django en donde se utiliza un legacy server mediante PostgreSQL.</p>
+                    <p class="card-text en">Website for searching workers, built with Django, utilizing a legacy server through PostgreSQL.</p>
+                    <a href="https://github.com/Tz-1/RRHH_Queries" target=”_blank” class="nes-btn is-primary">GitHub</a>
+                  </div>
+              </div>
+          </div>
+          <div class="carousel-item">
+              <div class="card">
+                  <div class="img-wrapper"><img src="assets/img/prj/LAB.png" class="d-block w-100" alt="..."> </div>
+                  <div class="card-body">
+                    <h5 class="card-title">Lab Django</h5>
+                    <p class="card-text es">Pagina web hecha en Django para el inventario de medicamentos.</p>
+                    <p class="card-text en">"Website built with Django for medicine inventory.</p>
+                    <a href="https://github.com/Tz-1/Django_CRUD_Lab" target=”_blank” class="nes-btn is-primary">GitHub</a>
+                  </div>
+              </div>
+          </div>
+          <div class="carousel-item">
+              <div class="card">
+                  <div class="img-wrapper"><img src="assets/img/prj/Digimon Api.png" class="d-block w-100" alt="..."> </div>
+                  <div class="card-body">
+                    <h5 class="card-title">Digimon Web</h5>
+                    <p class="card-text es">Pagina web hecha con HTML,CSS, Bootstrap y JS. Fetch Digimon API.</p>
+                    <p class="card-text en">Website built with HTML, CSS, Bootstrap, and JS. Fetching a Digimon API.</p>
+                    <a href="https://github.com/Tz-1/Project_Digimon_API" target=”_blank” class="nes-btn is-primary">GitHub</a>
+                  </div>
+              </div>
+          </div>
+          <div class="carousel-item">
+              <div class="card">
+                  <div class="img-wrapper"><img src="assets/img/prj/Nimrod.png" class="d-block w-100" alt="..."> </div>
+                  <div class="card-body">
+                    <h5 class="card-title">Nimrod</h5>
+                    <p class="card-text es">Pagina web hecha con Bootstrap, HTML y CSS para un restaurante.</p>
+                    <p class="card-text en">Website made with Bootstrap, HTML, and CSS for a restaurant.</p>
+                    <a href="https://github.com/Tz-1/FP_NimrodBar" target=”_blank” class="nes-btn is-primary">GitHub</a>
+                  </div>
+              </div>
+          </div>
+          <div class="carousel-item">
+              <div class="card">
+                  <div class="img-wrapper"><img src="assets/img/prj/JS Web.png" class="d-block w-100" alt="..."> </div>
+                  <div class="card-body">
+                    <h5 class="card-title">JS Web</h5>
+                    <p class="card-text es">Pagina web para practicar JavaScript.</p>
+                    <p class="card-text en">Web page for practicing JavaScript.</p>
+                    <a href="https://github.com/Tz-1/JavaScript_Web-tricks" target=”_blank” class="nes-btn is-primary">GitHub</a>
+                  </div>
+              </div>
+          </div>
+          <div class="carousel-item">
+              <div class="card">
+                  <div class="img-wrapper"><img src="assets/img/prj/JS Calcu.png" class="d-block w-100" alt="..."> </div>
+                  <div class="card-body">
+                    <h5 class="card-title">JS Calculadora</h5>
+                    <p class="card-text es">Calculadora hecha en JavaScript con una interfaz de prompts.</p>
+                    <p class="card-text en">Calculator made in JavaScript with a prompts interface.</p>
+                    <a href="https://github.com/Tz-1/JavaScript_Calculator" target=”_blank” class="nes-btn is-primary">GitHub</a>
+                  </div>
+              </div>
+          </div>
+          <div class="carousel-item">
+              <div class="card">
+                  <div class="img-wrapper"><img src="assets/img/prj/JS Bank.png" class="d-block w-100" alt="..."> </div>
+                  <div class="card-body">
+                    <h5 class="card-title">JS Bank</h5>
+                    <p class="card-text es">Interfaz de banco mediante prompts de JS.</p>
+                    <p class="card-text en">Bank interface using JS prompts.</p>
+                    <a href="https://github.com/Tz-1/JavaScript_Bank" target=”_blank” class="nes-btn is-primary">GitHub</a>
+                  </div>
+              </div>
+          </div>
+          <div class="carousel-item">
+              <div class="card">
+                  <div class="img-wrapper"><img src="assets/img/prj/Python Ex.png" class="d-block w-100" alt="..."> </div>
+                  <div class="card-body">
+                    <h5 class="card-title">Python</h5>
+                    <p class="card-text es">Varios ejercicios hechos en Python.</p>
+                    <p class="card-text en">Various exercises made in Python.</p>
+                    <a href="https://github.com/Tz-1/Python_Ex" target=”_blank” class="nes-btn is-primary">GitHub</a>
+                  </div>
+              </div>
+          </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon nes-pointer" aria-hidden="true"></span>
+        <span class="visually-hidden nes-pointer"></span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+        <span class="carousel-control-next-icon nes-pointer" aria-hidden="true"></span>
+        <span class="visually-hidden nes-pointer"></span>
+      </button>
+  </div>
+  </section>  
+  
+<!--Contacto-->
+  <section id="contacto" class="m-5 pt-2">
+    <div class="nes-container with-title is-centered " id="retro-container">
+      <p class="title es" style="display: block;">Contacto</p>
+      <p class="title en" style="display: none;">Contact</p>
+      <h4 class="es">Contactame a traves de las siguientes redes sociales:</h4>
+      <h4 class="en" style="display: none;">Get in contact with me through my social network:</h4>
+      <a href="mailto:tomas.bravogg@gmail.com"><i class="nes-icon gmail is-large"></i></a>
+      <a href="https://www.linkedin.com/in/tom%C3%A1s-b-492b9b279/" target=”_blank”><i class="nes-icon linkedin is-large"></i></i></a>
+      <a href="https://github.com/Tz-1" target=”_blank”><i class="nes-icon github is-large"></i></a>
+  </section>
+
+<!--Footer-->
+  <footer>
+    <div class="grupo-2">
+        <small class="es">&copy; 2023 <b>Tz-1</b> - Todos los Derechos Reservados.</small>
+        <small class="en" style="display: none;">&copy; 2023 <b>Tz-1</b> - All rights reserved.</small>
+    </div>
+    <i class="nes-octocat animate"></i>
+    <i class="snes-jp-logo"></i>
+  </footer>
+  
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous"></script>    
+  <script src="https://code.jquery.com/jquery-3.6.4.min.js" integrity="sha256-oP6HI9z1XaZNBrJURtCoUT5SUnxFr8s3BzRl+cbzUq8=" crossorigin="anonymous"></script>
+  <script src="assets/js/script.js"></script>
+</body>
+</html>
